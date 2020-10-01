@@ -3,10 +3,13 @@ Perhap Chat is a P2P terminal chat app, encrypted end-to-end with AES CTR.
 
 ## Installation
 
-
-
+For Windows
 ```bash
 npm install perhap-chat -g
+```
+For Linux/Mac (Issue with installing ngrok globally)
+```bash
+npm install perhap-chat --unsafe-perm -g
 ```
 
 ## Usage
