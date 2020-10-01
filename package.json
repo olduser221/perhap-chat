@@ -1,0 +1,20 @@
+{
+  "name": "perhap-chat",
+  "version": "1.0.0",
+  "description": "P2P terminal text chat, encrypted end-to-end with AES CTR.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Christopher Soscia",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "aes-js": "^3.1.2",
+    "express": "^4.17.1",
+    "get-port": "^5.1.1",
+    "ngrok": "^3.3.0",
+    "serverline": "^1.5.0",
+    "socket.io": "^2.3.0",
+    "socket.io-client": "^2.3.0"
+  }
+}
