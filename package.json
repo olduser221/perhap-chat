@@ -1,6 +1,6 @@
 {
   "name": "perhap-chat",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "P2P terminal text chat, encrypted end-to-end with AES CTR.",
   "main": "main.js",
   "bin": "./main.js",

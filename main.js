@@ -24,10 +24,18 @@ myRL.question('What is your name? ', (answer) => {
 })
 
 myRL.on('line', function(line) {
-    if (process.argv[2] === "join") {
-        socket.send("join", {"name": name, "msg": enc.encrypt(line)})
+
+    if (line === "!clear") {
+        process.stdout.write("\x1Bc")
+        console.log(Array(process.stdout.rows + 1).join('\n'))
+    } else if (line === "!exit") {
+        process.exit(0)
     } else {
-        socket.send("create", {"name": name, "msg": enc.encrypt(line)})
+        if (process.argv[2] === "join") {
+            socket.send("join", {"name": name, "msg": enc.encrypt(line)})
+        } else {
+            socket.send("create", {"name": name, "msg": enc.encrypt(line)})
+        }
     }
 })
 
