@@ -33,8 +33,8 @@ myRL.on('line', function(line) {
 
 async function main () {
 
-    // process.stdout.write("\x1Bc")
-    // console.log(Array(process.stdout.rows + 1).join('\n'))
+    process.stdout.write("\x1Bc")
+    console.log(Array(process.stdout.rows + 1).join('\n'))
 
     if (process.argv[2] !== undefined) {
 
