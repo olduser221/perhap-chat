@@ -12,6 +12,10 @@ let port, url, id, key, name;
 process.stdout.write("\x1Bc")
 console.log(Array(process.stdout.rows + 1).join('\n'))
 
+if (process.argv[2] == undefined) {
+    process.exit(0)
+}
+
 myRL.init('Me: ')
 myRL.question('What is your name? ', (answer) => {
     name = answer
@@ -29,10 +33,10 @@ myRL.on('line', function(line) {
 
 async function main () {
 
-    process.stdout.write("\x1Bc")
-    console.log(Array(process.stdout.rows + 1).join('\n'))
+    // process.stdout.write("\x1Bc")
+    // console.log(Array(process.stdout.rows + 1).join('\n'))
 
-    if (process.argv[2]) {
+    if (process.argv[2] !== undefined) {
 
         if (process.argv[2] === "create") {
 
@@ -57,6 +61,8 @@ async function main () {
             process.exit(1)
         }
 
+    } else {
+        process.exit(0)
     }
 
 }
