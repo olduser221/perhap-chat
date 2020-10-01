@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const getPort = require('get-port');
 const myRL = require("serverline");
 const ngrok = require('ngrok');

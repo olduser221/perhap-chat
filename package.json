@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "P2P terminal text chat, encrypted end-to-end with AES CTR.",
   "main": "main.js",
+  "bin": "./main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node main.js"
   },
   "author": "Christopher Soscia",
   "license": "UNLICENSED",
@@ -15,6 +17,7 @@
     "ngrok": "^3.3.0",
     "serverline": "^1.5.0",
     "socket.io": "^2.3.0",
-    "socket.io-client": "^2.3.0"
+    "socket.io-client": "^2.3.0",
+    "user": "0.0.0"
   }
 }
