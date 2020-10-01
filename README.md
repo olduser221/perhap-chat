@@ -6,17 +6,17 @@ Perhap Chat is a P2P terminal chat app, encrypted end-to-end with AES CTR.
 
 
 ```bash
-npm install
+npm install perhap-chat -g
 ```
 
 ## Usage
 
 ```bash
-node main.js create
+perhap-chat create
 ```
 or
 ```bash
-node main.js join (invite code here)
+perhap-chat join (invite code here)
 ```
 
 ## Contributing
