@@ -1,6 +1,6 @@
 {
   "name": "perhap-chat",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "P2P terminal text chat, encrypted end-to-end with AES CTR.",
   "main": "main.js",
   "bin": "./main.js",
@@ -9,7 +9,11 @@
     "start": "node main.js"
   },
   "author": "Christopher Soscia",
-  "license": "UNLICENSED",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/recaptchaToken/perhap-chat.git"
+  },
   "dependencies": {
     "aes-js": "^3.1.2",
     "express": "^4.17.1",
