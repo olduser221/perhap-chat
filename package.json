@@ -1,6 +1,6 @@
 {
   "name": "perhap-chat",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "P2P terminal text chat, encrypted end-to-end with AES CTR.",
   "main": "main.js",
   "bin": "./main.js",
@@ -14,6 +14,7 @@
     "type": "git",
     "url": "https://github.com/recaptchaToken/perhap-chat.git"
   },
+  "homepage": "https://github.com/recaptchaToken/perhap-chat",
   "dependencies": {
     "aes-js": "^3.1.2",
     "express": "^4.17.1",
